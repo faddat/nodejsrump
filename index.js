@@ -4,7 +4,7 @@ var http = require('http');
 const port = 3000;
 
 function handleRequest(request, response) {
-    response.end('Running on rumprun kernel! Requested url: ' + request.url);
+    response.end('Node JS is running on rumprun kernel! Requested url: ' + request.url);
 }
 
 var server = http.createServer(handleRequest);
