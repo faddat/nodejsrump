@@ -1,0 +1,7 @@
+version: 1
+
+scripts: 
+ - name: install npm
+   command: apt-get install -y npm
+ - name: install dependencies
+   command: npm install

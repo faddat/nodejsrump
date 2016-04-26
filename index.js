@@ -1,14 +1,11 @@
+var express = require('express');
+var app = express();
 
-var http = require('http');
-
-const port = 3000;
-
-function handleRequest(request, response) {
-    response.end('Node JS is running on rumprun kernel! Requested url: ' + request.url);
-}
-
-var server = http.createServer(handleRequest);
-
-server.listen(port, function() {
-    console.log('Server listening on http://localhost:%s', port);
+app.get('/', function(req, res){
+    res.end('Node JS is running on rumprun kernel in express! Requested url: ' + req.url);
 });
+
+var port =3000;
+app.listen(port);
+
+module.exports = app;
