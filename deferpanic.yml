@@ -1,6 +1,8 @@
 version: 1
 
 scripts: 
+ - name: refresh
+   command: apt-get update -y
  - name: install npm
    command: apt-get install -y npm
  - name: install dependencies
